@@ -1,0 +1,88 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* LIGHT MODE */
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* DARK MODE */
+body.dark {
+  background: #0b1c2d;
+  color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #1e293b;
+}
+
+body.light .navbar {
+  background: #e9d5ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px; /* ✅ THIS FIXES SPACING */
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+body.light .nav-links a {
+  color: #1e3a8a;
+}
+
+/* Animated underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #22c55e;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* BUTTON */
+.theme-btn {
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  background: #22c55e;
+  color: white;
+}
+
+/* PAGE */
+.page {
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
