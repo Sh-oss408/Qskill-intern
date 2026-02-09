@@ -10,7 +10,7 @@ export const translateTextApi = async (text, language) => {
       method: "POST",
       headers: {
         "content-type": "application/x-www-form-urlencoded",
-        "X-RapidAPI-Key": "YOUR_KEY_HERE",
+        "X-RapidAPI-Key": "ac7295702dmsh1df2c3f434ae019p12a205jsn52b6e710b30b",
         "X-RapidAPI-Host": "google-translate1.p.rapidapi.com",
       },
       body: encodedParams,
